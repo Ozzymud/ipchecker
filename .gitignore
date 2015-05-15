@@ -1,0 +1,15 @@
+*.exe
+bin/Debug/**
+bin/Debug/Sounds/**
+bin/Release/**
+bin/Release/Sounds/**
+obj/**
+*.7z
+StyleCop*.*
+Help/**
+Help/Working/**
+Help/Working/obj/**
+Help/Working/Output/**
+Help/Working/xmlComp/**
+*.shfbproj
+*.sdps
