@@ -61,7 +61,7 @@ using System.Windows.Forms;
         
         private void BackgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
-            this.ip = new WebClient().DownloadString("http://icanhazip.com");
+            this.ip = new WebClient().DownloadString("http://api.ipify.org");
             e.Result= this.ip;
         }
         
