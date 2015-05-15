@@ -120,7 +120,7 @@ namespace IPchecker
             this.Controls.Add(this.getExternalIP);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = global::IPchecker.Properties.Images.ip_icon_1;
+            this.Icon = global::ipchecker.Properties.Images.ip_icon2;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "MainForm";

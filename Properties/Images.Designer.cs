@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IPchecker.Properties {
+namespace ipchecker.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace IPchecker.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IPchecker.Properties.Images", typeof(Images).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ipchecker.Properties.Images", typeof(Images).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -73,9 +73,9 @@ namespace IPchecker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        public static System.Drawing.Icon ip_icon_1 {
+        public static System.Drawing.Icon ip_icon2 {
             get {
-                object obj = ResourceManager.GetObject("ip_icon_1", resourceCulture);
+                object obj = ResourceManager.GetObject("ip_icon2", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
