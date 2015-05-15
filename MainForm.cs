@@ -35,6 +35,8 @@ using System.Windows.Forms;
             this.InitializeComponent();
         }
         
+        private string ip = string.Empty;
+        
         private static string LocalIPAddress()
             {
             IPHostEntry host;
@@ -57,8 +59,6 @@ using System.Windows.Forms;
             return localIP;
         }
 
-        private string ip = string.Empty;
-        
         private void BackgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
             this.ip = new WebClient().DownloadString("http://api.ipify.org");
@@ -68,6 +68,7 @@ using System.Windows.Forms;
         private void backgroundWorker1_RunWorkerCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
         {
             this.resultBox.Text = this.ip;
+            Clipboard.SetText(this.ip);
         }
 
         private void Button1Click(object sender, EventArgs e)
@@ -79,7 +80,9 @@ using System.Windows.Forms;
         
         private void Button2Click(object sender, EventArgs e)
             {
-            this.resultBox.Text = LocalIPAddress();
+            ip = LocalIPAddress();
+            this.resultBox.Text = this.ip;
+            Clipboard.SetText(this.ip);
             }
 
         private void ExitToolStripMenuItemClick(object sender, EventArgs e)
